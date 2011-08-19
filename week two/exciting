@@ -1,0 +1,5 @@
+var name =  "User";
+alert("What is your name?" + name)
+  var name = prompt("name?");
+alert("Hello " + name);
+  
