@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>hello</title>
+	</head>
+	<body>
+		<p id="hello_paragraph">java</p>
+		<script type="text/javascript">
+			document.getElementById("hello_paragraph").innerHTML="Hello from javascript";
+			var list = document.createElement("ul");
+			var item = document.createElement("li");
+			var item2 = document.createElement("li");
+			item.innerHTML="monkeys";
+			item2.innerHTML="dogs";
+			list.appendChild(item);
+			list.appendChild(item2);
+			document.body.appendChild(list);
+		</script>
+	</body>
+<html>
