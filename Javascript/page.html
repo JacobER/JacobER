@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>hello</title>
+    <head>
+    	<title>Page</title>
 	</head>
 	<body>
-		<p id="hello_paragraph">java</p>
+		<form>
+			<input type="text" id="name" value="type name-> enter" />
+			<input type="button" value="Say Hi" onclick="say_hi()" />
+			<input type="button" value="Say goodbye" onclick="say_bye()" />
+		</form>
+		<p id="salutation">Type your name above and hit enter!</p>
 		<script type="text/javascript">
-			document.getElementById("hello_paragraph").innerHTML="Hello from javascript";
-			var list = document.createElement("ul");
-			var item = document.createElement("li");
-			var item2 = document.createElement("li");
-			item.innerHTML="monkeys";
-			item2.innerHTML="dogs";
-			list.appendChild(item);
-			list.appendChild(item2);
-			document.body.appendChild(list);
+			function say_hi(){
+				var name = document.getElementById("name").value;
+				document.getElementById("salutation").innerText="Hello " + name +"!";
+				}
+				function say_bye(){
+				var name = document.getElementById("name").value;
+				document.getElementById("salutation").innerText="Bye " + name +"... i'm going to mis you";
+				}
 		</script>
 	</body>
-<html>
+</html><!DOCTYPE html
